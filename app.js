@@ -11,8 +11,7 @@ const port = 3000;
 <<<<<<< HEAD
 mongoose.connect(process.env.DB_USER, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 =======
-mongoose.connect('mongodb+srv://xxxxxxxxxxxx', {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
->>>>>>> bb57ab2e305ade46a81578a9f95af97edb5ee4be
+
 
 const itemsSchema = {
   name: String
