@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 //connect to database
-mongoose.connect('mongodb+srv://admin-emmanuel:PFsO5rqqBzDMAPGK@cluster0.x6wpm.mongodb.net/toDoListDB?retryWrites=true&w=majority/', {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect(process.env.DB_USER, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 const itemsSchema = {
   name: String
