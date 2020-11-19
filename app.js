@@ -9,9 +9,8 @@ const app = express();
 const port = 3000;
 
 //connect to database
-<<<<<<< HEAD
+
 mongoose.connect(process.env.DB_USER, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
-=======
 
 
 const itemsSchema = {
