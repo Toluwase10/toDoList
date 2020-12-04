@@ -10,7 +10,7 @@ const port = 3000;
 
 //connect to database
 
-mongoose.connect("mongodb+srv://admin-emmanuel:TEqt0ajf2O7MZV2K@cluster0.x6wpm.mongodb.net/toDoListDB?retryWrites=true&w=majority/", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect(process.env.DB_URL, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 
 const itemsSchema = {
